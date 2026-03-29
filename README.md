@@ -144,6 +144,9 @@ Response:
 "response": "Skills:\n- Java\n- Spring Boot\n- Kafka"
 }
 
+<img width="1289" height="851" alt="image" src="https://github.com/user-attachments/assets/9400275e-8e50-4cb7-b80a-04f46907e0fc" />
+
+
 ---
 
 ## 🧩 Architecture
