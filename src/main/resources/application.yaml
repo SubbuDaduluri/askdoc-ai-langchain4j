@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: askdoc-ai-langchain4j
+
+app:
+  llm:
+    provider: ollama   # openai / ollama
+
+  openai:
+    api-key: ${OPENAI_API_KEY}
+    chat-model: gpt-4o-mini
+    embedding-model: text-embedding-3-small
+    embedding-dimension: 1536
+
+
+  ollama:
+    base-url: http://localhost:11434
+    chat-model: llama3
+    embedding-model: nomic-embed-text
+    embedding-dimension: 768
+
+  rag:
+    top-k: 5
+    chunk-size: 1000
+    chunk-overlap: 200
+
+  vectorstore:
+    qdrant:
+      host: localhost
+      port: 6334
+      collection-name: askdoc
+      initialize-schema: true   # custom flag (you will handle manually)
